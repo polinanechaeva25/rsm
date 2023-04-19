@@ -1,0 +1,665 @@
+{% extends 'mainapp/base.html'%}
+{% load static %}
+
+{% block 'content' %}
+
+<section class="home-slider">
+    <div class="slider-active">
+        <div class="single-slider overlay">
+            <div class="slider-image"
+                 style="background-image:url('static/images/business.jpg'); background-position: bottom;"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10 col-12">
+                        <div class="slider-content">
+                            <h3 class="slider-title">
+                                <b>Поставщик технологического оборудования и микроэлектроники</b>
+                                <!--                                <span>6 лет опыта работы</span>-->
+                            </h3>
+                            <!--                            <p class="slider-text">Mirum est notare quam littera gothica, quam nunc putamus parum-->
+                            <!--                                claram, anteposuerit litterarum formas humanitatis per seacula There are many variations-->
+                            <!--                                of passages of Lorem Ipsum available, but the majority</p>-->
+                            <div class="button">
+                                <a href="about.html" class="btn white">О нас</a>
+                                <!--                                <a href="courses.html" class="btn white primary">Our Courses</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="courses section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-12">
+                <div class="section-title bg">
+                    <h2>О нас</h2>
+                    <p>Поставщик технологического оборудования и микроэлектроники в сегменте b2b с 6-летним
+                        опытом работы ищет партнеров франшизы</p>
+                    <div class="icon"><i class="fa fa-clone"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-12">
+                <div class="text-content">
+                    <p>
+                        В настоящее время рынок b2b поставок технологического оборудования и микроэлектроники
+                        существенно изменяется. Это “Окно возможности” для Вас исполнить мечту о собственном бизнесе.
+                    </p><br>
+                    <p>
+                        В отрасли наблюдается низкая конкуренция, поскольку поставщики должны соответствовать
+                        высоким стандартам образования в связи с высокой технологичностью продукции. Мы готовы
+                        поделиться с Вами нашим опытом и обучить Вас для синергетического роста.
+                    </p>
+                </div>
+                <section id="contact" class="contact section">
+                    <div class="form-head">
+                        <form class="form" action="mail/mail.php">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group contact-icon">
+                                        <i class="fa fa-user"></i>
+                                        <input name="first-name" type="text" placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group contact-icon">
+                                        <i class="fa fa-envelope"></i>
+                                        <input name="last-name" type="text" placeholder="Фамилия">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group contact-icon">
+                                        <i class="fa fa-envelope"></i>
+                                        <input name="email" type="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group contact-icon">
+                                        <i class="fa fa-envelope"></i>
+                                        <input name="url" type="url" placeholder="Тема">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group message contact-icon">
+                                        <i class="fa fa-pencil"></i>
+                                        <textarea name="message" placeholder="Введите сообщение"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <div class="button">
+                                            <button type="submit" class="btn primary">Отправить письмо</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+
+                <div class="cta-image">
+                    <img src="{% static 'images/business-partner.png' %}" alt="#">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="features overlay section" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-12">
+                <div class="section-title bg not-caps">
+                    <h2>Что мы предлагаем<span></span></h2>
+                    <div class="icon"><i class="fa fa-clone"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-info-circle "></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4 class="f-title">Первичное обучение</h4>
+                        <p>
+                            Партнер получает высококлассное обучение в течение 3-х недель в нашем офисе:
+                            номенклатура товаров и услуг, конкурентные преимущества, техники продаж и участие в
+                            процедурах закупок, ведение CRM, учет и налогообложение. Мы предъявляем высоченные требования
+                            к нашим партнерам и обучение заканчивается аттестацией, которая может быть не пройдена.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-area-chart"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4 class="f-title">Маркетинг</h4>
+                        <p>Мы ищем лучшие бренды поставщиков и постоянно боремся за самые лучшие входящие
+                            цены. Вы будете обеспечены всеми маркетинговыми материалами, представлены в
+                            соц. сетях и на сайте. Вы избавляетесь от необходимости нанимать.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-binoculars"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4 class="f-title">Узнаваемый бренд</h4>
+                        <p>Партнер получает право использовать узнаваемый Заказчиками бренд, что
+                            значительно повышает доверие к вашим действиям.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-balance-scale"></i>
+                    </div>
+
+                    <div class="feature-content">
+                        <h4 class="f-title">Проверенная бизнес-модель</h4>
+                        <p>Вы получаете доступ к CRM с базой Заказчиков, у Вас эксклюзив на территорию поставок,
+                            знания и лучшие цены. Такая модель позволяет минимизировать риски и максимизировать
+                            прибыль.</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-battery-three-quarters"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4 class="f-title">Экономия времени и ресурсов</h4>
+                        <p>Не тратьте время и ресурсы на создание бизнеса с нуля, а используйте
+                            наши знания и опыт, что может значительно снизить затраты.
+                            Кроме того, наш опыт - это уже совершенные ошибки, которые вы избежите.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-credit-card "></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4 class="f-title">Минимальные вложения</h4>
+                        <p>Начать можно и без офиса продаж. Первые деньги Вы вложите в закуп
+                            оборудования, на поставку которого уже подписан контракт!</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4 class="f-title">Постоянное обучение</h4>
+                        <p>Мы постояно повышаем квалификацию наших партнеров как по знанию
+                            продукта и технологий, так и по soft скиллам.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-feature">
+                    <div class="icon-img">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4 class="f-title">Поддержка 24/7/365</h4>
+                        <p>Консультации и любая помощь в развитии бизнеса, что позволяет ему оперативно
+                            реагировать на изменения рынка и обеспечивать конкурентоспособность бизнеса.
+                            Вы никогда не останетесь один на один с проблемами.
+                            Хотя и их мы попытаемся минимизировать</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="courses section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3 col-12">
+						<div class="section-title bg not-caps">
+							<h2 class="font-black">Требования к партнерам</h2>
+<!--							<p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy</p>-->
+							<div class="icon"><i class="fa fa-clone"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="single-course">
+							<div class="course-head overlay">
+								<img src="{% static 'images/service-11.jpg' %}" alt="#">
+							</div>
+							<div class="course-body">
+								<div class="name-price">
+								</div>
+								<h4 class="c-title"><a href="course-single.html">Наличие опыта</a></h4>
+								<p>
+                                    Вы имеете подтвержденный инженерный опыт или опыт продаж инженерного
+                                    оборудования. Если опыт только инженерный (что прекрасно), то
+                                    навыки продаж должны быть не чужды!
+                                </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="single-course">
+							<div class="course-head overlay">
+								<img src="{% static 'images/service-12.jpg' %}" alt="#">
+							</div>
+							<div class="course-body">
+								<div class="name-price">
+								</div>
+								<h4 class="c-title"><a href="course-single.html">Финансовая стабильность</a></h4>
+								<p>
+                                Партнер должен иметь достаточные финансовые ресурсы для запуска и развития бизнеса.
+                                </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="single-course">
+							<div class="course-head overlay">
+								<img src="{% static 'images/business.jpg' %}" alt="#">
+							</div>
+							<div class="course-body">
+								<div class="name-price">
+								</div>
+								<h4 class="c-title"><a href="course-single.html">Репутация и деловая этика</a></h4>
+								<p>
+                                Кандидаты должны иметь безупречную репутацию и высокие моральные принципы, а также быть
+                                готовым соблюдать наши высокие этические правила.
+                                </p>
+                            </div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="single-course">
+							<div class="course-head overlay">
+								<img src="{% static 'images/service-14.jpg' %}" alt="#">
+							</div>
+							<div class="course-body">
+								<div class="name-price">
+								</div>
+								<h4 class="c-title"><a href="course-single.html">Способность к обучению</a></h4>
+								<p>
+                                    Кандидаты должны быть готовы к обучению и следованию нашей бизнес-модели, а
+                                    также к постоянному повышению квалификации.
+                                </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="single-course">
+							<div class="course-head overlay">
+								<img src="{% static 'images/service-15.jpg' %}" alt="#">
+                            </div>
+							<div class="course-body">
+								<div class="name-price">
+								</div>
+								<h4 class="c-title"><a href="course-single.html">Готовность к сотрудничеству</a></h4>
+								<p>Партнерфранчайзи должен быть готов к сотрудничеству с нашей командой,
+                                    делиться опытом и предоставлять отчетность о своей деятельности.
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<section class="events section back-geom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-12">
+                <div class="section-title bg">
+                    <h2><span>Инфографика</span> Таймлайн</h2>
+                    <!--                    <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own-->
+                    <!--                        additions education satisfied the perpetual. If he cause manor happy</p>-->
+                    <div class="icon"><i class="fa fa-hourglass-end"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--                                <img src="{% static 'images/points.png' %}" alt="#" >-->
+            <div class="col-lg-3 col-12">
+                <div class="event-img">
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-12">
+                <div class="coming-event">
+
+                    <div class="single-event">
+                        <div class="event-date">
+                            <p>1</p>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title">
+                                <a href="event-single.html">
+                                    До заключения предварительного Договора коммерческой концессии (ДКК)
+                                </a>
+                            </h3>
+                            <ul>
+                                <li>Встреча или зум для знакомства;</li>
+                                <li>Подготовка Индивидуальной Финмодели, учитывая анализ региона;</li>
+                                <li>Оценка безопасности: личность Партнера (персонала если есть);</li>
+                                <li>Разъяснения положений предварительного и ДКК;</li>
+                                <li>Помощь в регистрации ООО и выбор налогообложения</li>
+
+                            </ul>
+                            <!--                            <span class="entry-date-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 05:23 AM - 09:23 AM </span>-->
+                        </div>
+                    </div>
+
+                    <div class="single-event">
+                        <div class="event-date">
+                            <p>2</p>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title"><a href="event-single.html">После заключения предварительного
+                                ДКК</a>
+                            </h3>
+                            <ul>
+                                <li>Обучение и аттестация</li>
+                                <li>Помощь в поиске персонала (если нужно)</li>
+                                <li>Обсуждение расходов, подготовка полного бюджета инвестиций</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-event">
+                        <div class="event-date">
+                            <p>3</p>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title"><a href="event-single.html">После заключения ДКК</a></h3>
+                            <ul>
+                                <li>Регистрация ДКК</li>
+                                <li>Подключение к программному обеспечению: CRM и учета</li>
+                                <li>Предоставление форм всех документов (по работе с персоналом и клиентами)</li>
+                                <li>Товарное кредитование</li>
+                                <li>Предоставление информации о всей цепочке поставок: закупа и доставки</li>
+                                <li>Консультационная поддержка</li>
+                                <li>Постоянное повышение квалификации персонала: обучение и аттестация персонала в
+                                    едином портале обучения
+                                </li>
+                                <li>Оценка на соответствие стандартов работы сети</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-event">
+                        <div class="event-date">
+                            <p>4</p>
+                        </div>
+                        <div class="event-content">
+                            <h3 class="event-title"><a href="event-single.html">После решения открыть Офис продаж</a>
+                            </h3>
+                            <ul>
+                                <li>Согласование помещения офиса</li>
+                                <li>Помощь в заключении договора аренды</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta-inner overlay section" style="background-image:url('static/images/business_2.jpg')"
+         data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="text-content">
+                        <h2>Укрупненный бизнес-план</h2>
+                        <div style="overflow: auto">
+                            <table class="business-plan">
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>Первый год работы</td>
+                                        <td>Второй год</td>
+                                        <td>Третий год и последующие</td>
+                                    </tr>
+                                    <tr>
+                                        <td>План выручки (дохода)<br><span>млн &euro; без НДС</span></td>
+                                        <td>8.094</td>
+                                        <td>20.000</td>
+                                        <td>30.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Расходы</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Закуп оборудования <br><span>млн &euro; без НДС</span> </td>
+                                        <td>5.680</td>
+                                        <td>14.022</td>
+                                        <td>21.037</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Логистика <br><span>млн &euro; без НДС</span></td>
+                                        <td>0.056</td>
+                                        <td>0.140</td>
+                                        <td>0.211</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ФОТ и прочие расходы <br><span>млн &euro; без НДС</span></td>
+                                        <td>0.404</td>
+                                        <td>0.210</td>
+                                        <td>0.311</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Маркетинговый сбор <br><span>млн &euro; без НДС</span></td>
+                                        <td>0.110</td>
+                                        <td>1.000</td>
+                                        <td>1.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Роялти <br><span>млн &euro; без НДС</span></td>
+                                        <td>0.404</td>
+                                        <td>1.000</td>
+                                        <td>1.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Прибыль <br><span>млн &euro; без НДС</span></td>
+                                        <td>1.496</td>
+                                        <td>3.628</td>
+                                        <td>5.441</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="font-white">
+                            <li>
+                                Рекомендовано привлечение финансирования не дороже 24% годовых
+                            </li>
+                            <li>
+                                Рекомендована оптимальная стоимость финансирования 12% годовых
+                            </li>
+                            <li>
+                                Рекомендована максимальная скидка на внесение ПО 3% - за 50% ПО; 8% - за 100% ПО. 2% -
+                                маркетинговая скидка
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faqs section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-12">
+                <div class="section-title bg">
+                    <h2>FAQ</h2>
+                    <!--                    <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own-->
+                    <!--                        additions education satisfied the perpetual. If he cause manor happy</p>-->
+                    <div class="icon"><i class="fa fa-question"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-12">
+                <div class="faq-image">
+                    <img src="{% static 'images/faq-1.png' %}" alt="FAQ">
+                </div>
+            </div>
+            <div class="col-lg-7 col-12">
+                <div class="faq-main">
+                    <div class="faq-content">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                            <div class="panel panel-default active">
+                                <div class="faq-heading" id="FaqTitle1">
+                                    <h4 class="faq-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                           href="#faq1">
+                                            <i class="fa fa-question"></i>
+                                            Что такое Эксклюзива (территориальная защита) и как она работает?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq1" class="panel-collapse collapse show" role="tabpanel"
+                                     aria-labelledby="FaqTitle1">
+                                    <div class="faq-body">
+                                        <p>Территориальная защита - это гарантия, которую мы
+                                            предоставляем партнеру на то, что он будет
+                                            единственным представителем бренда на определенной
+                                            территории.</p>
+                                        <p>Определяется по месту поставки продукции.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="faq-heading" id="FaqTitle2">
+                                    <h4 class="faq-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                           href="#faq2">
+                                            <i class="fa fa-question"></i>
+                                            Какие виды платежей есть? А дополнительные
+                                            расходы (самый мелкий шрифт)?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq2" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="FaqTitle2">
+                                    <div class="faq-body">
+                                        <h6>Никакого мелкого шрифта!</h6>
+                                        <ul>
+                                            <li>Паушальный взнос за обучение - 300 000 (триста тысяч) рублей.</li>
+                                            <li>
+                                                5% - маркетинговый сбор и 5% - роялти от выручки с
+                                                момента подписания первого контракта (отсрочка 3
+                                                месяяца.
+                                            </li>
+                                            <li>Затраты на проживание и приезд в Москву на обучение</li>
+                                            <li>Затраты на закуп оборудования при подписания первого
+                                                контракта (мы заинтересованы Вам помочь: отсрочка или
+                                                займ)
+                                            </li>
+                                            <li>Затраты на открытие офиса - только когда не сможете
+                                                справляться сами и нужен будет штат сотрудников
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="faq-heading" id="FaqTitle3">
+                                    <h4 class="faq-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                           href="#faq3">
+                                            <i class="fa fa-question"></i>Сколько времени занимает запуск бизнеса?</a>
+                                    </h4>
+                                </div>
+                                <div id="faq3" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="FaqTitle3">
+                                    <div class="faq-body">Время, необходимое для запуска, зависит от
+                                        согласованного времени обучения и его результатов:
+                                        после 3-х недель обучения и стажировки у нас в офисе, вы
+                                        пройдете аттестацию и готовы заключать контракты от
+                                        имени нашей сети.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="faq-heading" id="FaqTitle4">
+                                    <h4 class="faq-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                           href="#faq4">
+                                            <i class="fa fa-question"></i>
+                                            Что будет если я не пройду аттестацию?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="faq4" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="FaqTitle4">
+                                    <div class="faq-body"><p>К сожалению, если аттестация не будет пройдена с 3-х
+                                        раз, мы рассторгнем предварительный договор
+                                        коммерческой концессии и не вернем паушальный взнос.</p>
+                                        <p>Так что не прогуливайте!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

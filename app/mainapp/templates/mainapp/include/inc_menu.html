@@ -1,0 +1,42 @@
+{% load static %}
+<header class="header">
+    <div class="header-inner overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="logo">
+                        <a href="index.html"><img class="logotype" src="{% static 'images/logo.png' %}" alt="#"></a>
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-12">
+                    <div class="menu-bar">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-collapse">
+                                <ul id="nav" class="nav menu navbar-nav">
+                                    <li class="active"><a href="index.html"><i class="fa fa-home"></i>Главная</a></li>
+                                    <li><a href="#"><i class="fa fa-clone"></i>О нас</a>
+                                        <ul class="dropdown">
+                                            <li><a href="teachers.html">Teachers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="courses.html"><i class="fa fa-clone"></i>О сегменте</a></li>
+                                    <li><a href="events.html"><i class="fa fa-bullhorn"></i>Условия</a></li>
+                                    <li><a href="contact.html"><i class="fa fa-address-book"></i>Бизнес-План</a> </li>
+                                    <li><a href="contact.html"><i class="fa fa-address-book"></i>FAQ</a> </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="search-area">
+                            <a href="#header" class="icon"><i class="fa fa-search"></i></a>
+                            <form class="search-form">
+                                <input type="text" placeholder="ex: premium course" name="search">
+                                <button value="search " type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
